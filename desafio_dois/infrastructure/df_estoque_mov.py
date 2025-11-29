@@ -19,7 +19,8 @@ class movEstoque:
         data = pd.read_json(self.estoque_inicial_json)
         df_estoque = pd.json_normalize(data["estoque"])
         df_estoque["horario_mov"] = self.horario_mov
-
+        df_estoque["codigoProduto"] = df_estoque["codigoProduto"].astype(int)
+        df_estoque["estoque"] = df_estoque["estoque"].astype(int)
         return df_estoque
 
     def df_estoque_atual(self):
@@ -27,6 +28,8 @@ class movEstoque:
         data = pd.read_json(self.estoque_atual_json)
         df_estoque = pd.json_normalize(data["estoque"])
         df_estoque["horario_mov"] = self.horario_mov
+        df_estoque["codigoProduto"] = df_estoque["codigoProduto"].astype(int)
+        df_estoque["estoque"] = df_estoque["estoque"].astype(int)
         return df_estoque
 
     def item_selecionado(self, produto):
@@ -48,13 +51,13 @@ class movEstoque:
     def movimentar_estoque(self, produto, tipo_mov, quantidade_mov):
         """Atualização do estoque com base na movimentação."""
         df_estoque = self.df_estoque_atual()
-        df_mov
         print(f"\nMovimentando produto...\n")
         if tipo_mov.lower() == "entrada":
-
-            df_estoque.loc[
+            df_mov = df_estoque.loc[df_estoque["codigoProduto"] == produto]
+            df_mov.loc[
                 df_estoque["codigoProduto"] == produto, "estoque"
             ] += quantidade_mov
+            df_estoque = pd.concat([df_estoque, df_mov], ignore_index=True)
             print(
                 f"Entrada de {quantidade_mov} unidades do produto '{produto}' realizada com sucesso."
             )
