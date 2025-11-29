@@ -31,6 +31,29 @@ while mov_loop == 1:
             print("Código de produto inválido.")
             cod_produto = int(input("Digite o código do produto a ser movimentado: "))
             continue
+        print(f"\nMovimentando produto...\n {cod_}")
+        for item in estoque_inicial:
+            if item["codigoProduto"] == cod_produto:
+                if mov.lower() == "e":
+                    item["estoque"] += qtidade_mov
+                    print(
+                        f"Entrada de {qtidade_mov} unidades do produto '{cod_produto}' realizada com sucesso."
+                    )
+                elif mov.lower() == "s":
+                    if item["estoque"] >= qtidade_mov:
+                        item["estoque"] -= qtidade_mov
+                        print(
+                            f"Saída de {qtidade_mov} unidades do produto '{cod_produto}' realizada com sucesso."
+                        )
+                    else:
+                        print(
+                            f"Erro: Quantidade insuficiente em estoque para o produto '{cod_produto}'."
+                        )
+                else:
+                    print(
+                        "Tipo de movimentação inválido. Use 'e' para entrada ou 's' para saída."
+                    )
+
     elif inicio.lower() == "n":
         print("Encerrando o programa.")
         mov_loop = 0
