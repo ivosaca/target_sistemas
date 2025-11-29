@@ -34,5 +34,5 @@ class movEstoque:
         return df_produto_selecionado
 
 
-# print(movEstoque().df_estoque_atual())
-# print(movEstoque().item_selecionado(106))
+print(movEstoque().df_estoque_atual())
+print(movEstoque().item_selecionado(106))
