@@ -7,6 +7,7 @@ data = pd.read_json(cwd + "/desafio_um/dto/desafio_um.json")
 df = pd.json_normalize(data["vendas"])
 
 
+# calculo de comissao dado o valor apresentado na descrição do desafio
 def comissao(row):
     if row["valor"] < 100:
         return 0

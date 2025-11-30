@@ -4,6 +4,8 @@ moveestoque = movEstoque()
 mov_loop = 1
 contagem = 0
 while mov_loop == 1:
+    # contagem de movimentações apenas para fazer com que o sistema utilize
+    # na primeira vez o estoque inicial e a partir disso o estoque atualizado
     contagem += 1
     loop_interno = 1
     inicio = input("Deseja iniciar uma movimentação? (s/n)")
