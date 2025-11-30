@@ -71,8 +71,13 @@ while mov_loop == 1:
             loop_interno = 0
         mov_loop = 1
     elif inicio.lower() == "n":
-        print("Encerrando o programa.")
-        moveestoque.reset_estoque_atual()
+        reset = input(
+            "Encerrando o programa. \n Gostaria de resetar o estoque atual para o estoque inicial? (s/n)"
+        )
+        if reset.lower() == "s":
+            moveestoque.reset_estoque_atual()
+        else:
+            print("Estoque atual mantido.")
         mov_loop = 0
     else:
         print("Entrada inválida. Por favor, digite 's' ou 'n'.")
