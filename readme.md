@@ -41,8 +41,8 @@ calcule o valor dos juros na data de hoje considerando que a multa seja
 de 2,5% ao dia. 
 
 
-    Para este desafio consideramos o valor da multa como fixa, dando apenas a possilidade do usuário apresentar o valor a ser calculado como inicial
-    e a quantidade de dias nos quais a multa será aplicada. 
+    Para este desafio consideramos o valor da multa como fixa, dando apenas a possilidade do usuário 
+    apresentar o valor a ser calculado como inicial e a quantidade de dias nos quais a multa será aplicada. 
 
 ******************************
 
