@@ -12,8 +12,7 @@ seguindo a seguinte regra para cada venda:
     - A partir de R$500,00 gera 5% de comissão 
   
 
-    Utilizando a biblioteca pandas foi feito uma ordenação dos dados vindos do json para obter uma melhor visualização e organização dos mesmos.
-    Resultados obtidos em arquivo json com as taxas de comissão final para cada vendedor e arquivo .xlsx com 2 páginas sendo a primeira uma lista de comissão final aplicada para cada vendedor, e uma segunda pagina com a demonstração pontual de valor para cada venda realizada pelo vendedor. 
+    Utilizando a biblioteca pandas foi feito uma ordenação dos dados vindos do json para obter uma melhor visualização e organização dos mesmos.Resultados obtidos em arquivo json com as taxas de comissão final para cada vendedor e arquivo .xlsx com 2 páginas sendo a primeira uma lista de comissão final aplicada para cada vendedor, e uma segunda pagina com a demonstração pontual de valor para cada venda realizada pelo vendedor. 
 
 ******************************
 
@@ -30,7 +29,7 @@ seguindo a seguinte regra para cada venda:
      final do estoque do produto movimentado.
 
 
-    Desafio feito levando em consideração o tempo de funcionamento do programa. 
+    Desafio feito levando em consideração o tempo de funcionamento do programa.
     Quando o programa inicia utiliza um json original dado pelo cliente, dando a possibilidade de fazer movimentações de estoque listando todas as movimentações com data e hora. Podemos caso fosse necessário adicionar um local novo para aplicação de tambem um usuário responsável por tal movimentação.
 
 ******************************
