@@ -1,29 +1,34 @@
 {
-  "estoque": [
-    {
-      "codigoProduto": 101,
-      "descricaoProduto": "Caneta Azul",
-      "estoque": 150
-    },
-    {
-      "codigoProduto": 102,
-      "descricaoProduto": "Caderno Universitário",
-      "estoque": 75
-    },
-    {
-      "codigoProduto": 103,
-      "descricaoProduto": "Borracha Branca",
-      "estoque": 200
-    },
-    {
-      "codigoProduto": 104,
-      "descricaoProduto": "Lápis Preto HB",
-      "estoque": 320
-    },
-    {
-      "codigoProduto": 105,
-      "descricaoProduto": "Marcador de Texto Amarelo",
-      "estoque": 90
-    }
-  ]
+    "estoque": [
+        {
+            "codigoProduto": 101,
+            "descricaoProduto": "Caneta Azul",
+            "estoque": 150,
+            "horario_mov": "2025-11-30 01:44:27"
+        },
+        {
+            "codigoProduto": 102,
+            "descricaoProduto": "Caderno Universit\u00e1rio",
+            "estoque": 75,
+            "horario_mov": "2025-11-30 01:44:27"
+        },
+        {
+            "codigoProduto": 103,
+            "descricaoProduto": "Borracha Branca",
+            "estoque": 200,
+            "horario_mov": "2025-11-30 01:44:27"
+        },
+        {
+            "codigoProduto": 104,
+            "descricaoProduto": "L\u00e1pis Preto HB",
+            "estoque": 320,
+            "horario_mov": "2025-11-30 01:44:27"
+        },
+        {
+            "codigoProduto": 105,
+            "descricaoProduto": "Marcador de Texto Amarelo",
+            "estoque": 90,
+            "horario_mov": "2025-11-30 01:44:27"
+        }
+    ]
 }
